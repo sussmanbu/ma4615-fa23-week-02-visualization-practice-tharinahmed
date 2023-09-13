@@ -1,7 +1,7 @@
 ---
 title: "Week 02: COVID Visualization Activity"
 date: "September, 11 2023"
-author: "**`[[`**Your Name**`]]`**"
+author: "Tharin Ahmed"
 ---
 
 Today, we'll be working with a data set related to COVID.
@@ -36,6 +36,17 @@ covid_data_count |>
 ```
 
 1. Write code for a plot and describe what you observe?
+```{r}
+ggplot(covid_data_count, aes(x = date, y = Cases, color = race)) +
+  geom_boxplot(varwidth = TRUE)
+```
+
 2. Are there any conclusions you can draw?
+Around December there was a rise in cases again, overall. 
+
 3. What were you not able to do due to not having the R knowledge?
+We kind of have the knowledge but better at filtering because I wasn't sure where I was going wrong for it to not work with the filters.
+
 4. What other data would be useful to better understand this data?
+Reasons for why cases started to rise, such as people travelling more, or being in big group settings where alot of others people were around. 
+
